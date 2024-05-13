@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PersonalitiesHeader = () => {
   return (
@@ -11,9 +12,20 @@ const PersonalitiesHeader = () => {
         color: "white",
       }}
     >
-      <p style={{ fontFamily: 'Holtwood One SC', fontSize: "56px", margin: "0" }}>
-        16 OSOBOWOŚCI
-      </p>
+      <Link to="/mainpage" style={{ textDecoration: "none" }}>
+        <button
+          style={{
+            fontFamily: 'Holtwood One SC',
+            fontSize: "56px",
+            border: "none",
+            cursor: "pointer",
+            backgroundColor: "transparent",
+            color: "white", 
+          }}
+        >
+          16 OSOBOWOŚCI
+        </button>
+      </Link>
     </div>
   );
 };

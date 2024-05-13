@@ -6,7 +6,9 @@ import MainImage from "../MainImage.png"
 
 
 const MainPage = () => {
-    return (
+   
+  
+  return (
         <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "#4298B4"}}>
             <PersonalitiesHeader />
             <UpperMenu />
