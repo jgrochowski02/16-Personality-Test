@@ -2,15 +2,11 @@ import React from "react";
 import Button from "../Button/Button"; 
 
 const UpperMenu = () => {
-  const handleClick = () => {
-    alert("Kliknięto przycisk!");
-  };
-
   return (
-    <div style={{textAlign: "center"}}>
-      <Button onClick={handleClick} color="#D9D9D9" >Typy osobowości</Button>
-      <Button onClick={handleClick} color="#D9D9D9" >Test osobowości</Button>
-      <Button onClick={handleClick} color="#D9D9D9" >Logowanie</Button>
+    <div style={{ textAlign: "center", backgroundColor: "#D9D9D9", borderRadius: "10px" }}>
+      <Button to="/types" color="#D9D9D9" borderRadius="10px 0 0 10px">Typy osobowości</Button>
+      <Button to="/test" color="#D9D9D9">Test osobowości</Button>
+      <Button to="/login" color="#D9D9D9" borderRadius="0 10px 10px 0">Logowanie</Button>
     </div>
   );
 };
