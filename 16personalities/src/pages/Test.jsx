@@ -1,6 +1,7 @@
 import PersonalitiesHeader from "../components/PersonalitiesHeader/PersonalitiesHeader"
 import UpperMenu from "../components/UpperMenu/UpperMenu"
 import InfoTest from "../components/InfoTest/InfoTest"
+import PersonalityForm from "../components/PersonalityForm/PersonalityForm"
 
 const Test = () => {
     return (
@@ -8,7 +9,7 @@ const Test = () => {
             <PersonalitiesHeader />
             <UpperMenu />
             <InfoTest/>
-
+            <PersonalityForm />
            
 
         </div>
