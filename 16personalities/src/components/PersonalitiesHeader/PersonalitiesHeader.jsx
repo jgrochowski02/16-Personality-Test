@@ -23,7 +23,7 @@ const PersonalitiesHeader = () => {
             color: "white", 
           }}
         >
-          16 OSOBOWOŚCI
+          16 OSOBOWOSCI
         </button>
       </Link>
     </div>
