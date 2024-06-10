@@ -1,0 +1,36 @@
+[
+    {
+      "question": "Czy lubisz pracować w zespole?",
+      "options": [
+        "Zdecydowanie nie",
+        "Raczej nie",
+        "Nie wiem",
+        "Raczej tak",
+        "Zdecydowanie tak",
+        "Nie dotyczy"
+      ]
+    },
+    {
+      "question": "Czy lubisz pracować pod presją?",
+      "options": [
+        "Zdecydowanie nie",
+        "Raczej nie",
+        "Nie wiem",
+        "Raczej tak",
+        "Zdecydowanie tak",
+        "Nie dotyczy"
+      ]
+    },
+    {
+      "question": "Czy preferujesz pracę kreatywną?",
+      "options": [
+        "Zdecydowanie nie",
+        "Raczej nie",
+        "Nie wiem",
+        "Raczej tak",
+        "Zdecydowanie tak",
+        "Nie dotyczy"
+      ]
+    }
+  ]
+  
