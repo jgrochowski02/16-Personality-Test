@@ -1,4 +1,7 @@
 import './App.css';
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../src/firebase"; // Zaimportuj swoją instancję firebase/auth
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
 import PATH from './paths';
 import MainPage from './pages/MainPage';
@@ -10,6 +13,19 @@ import Test from './pages/Test';
 import Types from './pages/Types';
 
 function App() {
+  const navigate = useNavigate
+ 
+
+  useEffect(() => {
+    // Wyloguj użytkownika przy ładowaniu aplikacji
+    auth.signOut().then(() => {
+      // Przekieruj użytkownika na stronę główną lub inną stronę
+      navigate("/");
+    }).catch((error) => {
+      console.error("Błąd podczas wylogowywania:", error);
+    });
+  }, [navigate]); 
+
   return (
     <Router>
       <Routes>
