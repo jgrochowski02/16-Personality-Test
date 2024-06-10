@@ -10,12 +10,11 @@ const Login = () => {
         <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "#D9D9D9"}}>
             <PersonalitiesHeader />
             <UpperMenu/>
-            <div>
-            <img src={LeftLogin} alt="" style={{ maxWidth: "100%", marginRight: "10px" }} />
-            <LoginForm/>
-            <img src={RightLogin} alt="" style={{ maxWidth: "100%", marginRight: "10px" }} />
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <img src={LeftLogin} alt="" style={{ width: "20%", marginLeft: "50px"}} />
+                <LoginForm/>
+                <img src={RightLogin} alt="" style={{  width: "20%", marginLeft: "50px"}} />
             </div>
-           
         </div>
     )
 }
